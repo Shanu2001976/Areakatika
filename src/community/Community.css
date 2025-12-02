@@ -1,0 +1,222 @@
+/* General page styles */
+.community-page {
+    min-height: 100vh;
+    font-family: var(--font-primary);
+}
+
+/* Hero section with enhanced gradient and subtle pattern */
+.community-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    height: 100vh;
+    padding-top: 80px;
+    /* Navbar height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.community-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.4;
+}
+
+/* Overlay for text readability */
+.community-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Text section */
+.community-text {
+    text-align: center;
+    color: var(--text-light);
+    max-width: 1000px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+.community-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: -1px;
+}
+
+.intro-text {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-weight: 300;
+}
+
+.campaign-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 50px;
+    opacity: 0.9;
+}
+
+/* Initiatives section */
+.initiatives {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.initiative-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.initiative-item:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.initiative-item:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.initiative-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.initiative-item i {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.initiative-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.initiative-item p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+}
+
+/* Call-to-action button */
+.cta-button {
+    background: linear-gradient(45deg, var(--secondary-color), var(--secondary-dark));
+    color: var(--text-light);
+    border: none;
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(238, 129, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    transform: scale(1.05) translateY(-2px);
+    box-shadow: 0 10px 25px rgba(238, 129, 0, 0.5);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .community-hero {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .community-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .intro-text,
+    .campaign-text {
+        font-size: 1.1rem;
+    }
+
+    .initiatives {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .initiative-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cta-button {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .community-text h1 {
+        font-size: 2.2rem;
+    }
+}

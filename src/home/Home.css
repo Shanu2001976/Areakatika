@@ -1,0 +1,45 @@
+/* Ensure hero starts AFTER navbar */
+.hero-section {
+    margin-top: 80px;
+    /* Clear the fixed navbar */
+    width: 100%;
+    height: auto;
+    /* Let image define height to avoid cropping */
+    min-height: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--primary-dark);
+}
+
+/* Static Hero Image */
+.hero-image {
+    width: 100%;
+    height: auto;
+    /* Maintain natural aspect ratio */
+    display: block;
+    /* Remove inline gap */
+    object-fit: contain;
+    /* Ensure full image is visible */
+}
+
+/* Optional overlay for clarity - REMOVED BACKGROUND */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%); */
+    background: transparent;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        /* height: 60vh; */
+        /* Let it be auto here too */
+        min-height: auto;
+    }
+}
