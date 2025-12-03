@@ -56,6 +56,17 @@ function PrivacyPolicy() {
                             </ul>
                             <p>We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.</p>
                             <p>If you believe that any information we are holding on you is incorrect or incomplete, please write to # 4-6- 238/A, ESAMIA BAZA NEAR GANESH TEMPLE Stn Kachiguda Hyderabad Himayathnagar Telangana 500027 Stn. Kachiguda H.O TELANGANA 500027 . or contact us at 7989225330 or care@arekatikameat.com as soon as possible. We will promptly correct any information found to be incorrect.</p>
+
+                            <h3>Deletion of Your Account & Data</h3>
+                            <p>You have the right to request the deletion of your account and any personal information associated with it. If you wish to delete your account, you may contact us at care@arekatikameat.com or call us at 7989225330.</p>
+                            <p>Once we receive your request, we will verify your identity and process the deletion within a reasonable time frame.</p>
+                            <p><strong>Please note:</strong></p>
+                            <ul className="legal-list">
+                                <li>Certain information may be retained as required by law, for fraud prevention, or for legitimate business purposes.</li>
+                                <li>After deletion, you may no longer be able to access any services or information linked to your account.</li>
+                                <li>Any data retained will be handled securely and only for the duration necessary to fulfill legal or regulatory obligations.</li>
+                            </ul>
+                            <p>If you believe your data is being retained longer than required, you can reach out to us for clarification or further action at care@arekatikameat.com.</p>
                         </div>
                     </div>
                 </div>
